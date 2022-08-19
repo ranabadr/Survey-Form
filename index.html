@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thanks for taking the time to help us improve our products</p>
+    </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label">Name</label>
+          <input id="name" type="text" class="form-control" placeholder="Enter your name" required >
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label>
+          <input id="email" type="email" class="form-control" placeholder="Enter your email" required >
+        </div>
+        <div class="form-group">
+          <label id="number-label">Age</label>
+          <input id="number" type="number" min="12" max="100" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>What is your feature of our products?</p>
+          <select id="dropdown" class="form-control">
+            <option disabled selected value >Select an option</option>
+            <option value="ease-of-use">Ease of use</option>
+            <option value="quality">Quality</option>
+            <option value="design">Design</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend our products to a friend?</p>
+          <label>
+            <input name="recommend" type="radio" value="definitely" class="radio-button" checked >
+            Definitely
+          </label>
+          <label>
+            <input name="recommend" type="radio" value="maybe" class="radio-button" >
+            Maybe
+          </label>
+          <label>
+            <input name="recommend" type="radio" value="not-sure" class="radio-button" >
+            Not sure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>How did you hear about our products?</p>
+          <label>
+            <input name="checkbox" type="checkbox" value="search-engine" class="checkbox-button" >
+            Search engine (Google, Bing, etc)
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="social-media" class="checkbox-button" >
+            Social Media (Facebook, LinkedIn, etc)
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="referral" class="checkbox-button" >
+            Referral (friend, family, co-worker)
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="youtube" class="checkbox-button" >
+            YouTube
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="tv-ad" class="checkbox-button" >
+            TV Ad
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="email" class="checkbox-button" >
+            Email
+          </label>
+          <label>
+            <input name="checkbox" type="checkbox" value="others" class="checkbox-button" >
+            Others
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea name="comment" placeholder="Enter your comment here..." ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
